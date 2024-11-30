@@ -7,11 +7,11 @@ const LeftPannel = () => {
         <div className='left'>
             <div className='profile'>
                 <div className='profile-image'>
-                    <span>🎨</span>
+                    👤
                 </div>
                 <div className='profile-info'>
-                    <div className='username'>Bullet Journal</div>
-                    <div className='status'>Creative Planning</div>
+                    <div className='username'>noguri</div>
+                    <div className='status'>모든 노트 페이지</div>
                 </div>
             </div>
             <div className='divider'></div>
