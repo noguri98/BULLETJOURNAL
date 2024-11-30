@@ -24,12 +24,12 @@ const RightPannel = () => {
             <div className='content-header'>
                 <div className='header-title'>
                     <span className='header-icon'>📝</span>
-                    <h1>새로운 노트</h1>
+                    <h1>모든 노트</h1>
                 </div>
                 <div className='header-actions'>
                     <button className='action-button'>
                         <span>✨</span>
-                        새로 만들기
+                        새로운 노트
                     </button>
                 </div>
             </div>
