@@ -1,0 +1,140 @@
+/* Left-Pannel */
+.left {
+    display: flex;
+    flex-direction: column;
+    width: clamp(220px, 15%, 280px);
+    height: 100%;
+    gap: 15px;
+    padding: 15px;
+    background-color: rgba(30, 30, 30, 0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+}
+
+/* 스크롤바 스타일 */
+.left::-webkit-scrollbar {
+    width: 5px;
+}
+
+.left::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.left::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+}
+
+/* 프로필 섹션 */
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 5px;
+}
+
+.profile-image {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.username {
+    color: white;
+    font-size: 0.9em;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.status {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.8em;
+}
+
+/* 구분선 */
+.divider {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 5px 0;
+}
+
+/* 월간 캘린더 섹션 */
+.monthly {
+    width: 100%;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 15px;
+}
+
+/* 위젯 섹션 */
+.widgets {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.widget {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+
+.widget:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.widget-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.widget-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.widget-icon {
+    font-size: 1.2em;
+}
+
+.widget-title {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.widget-count {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1em;
+    font-weight: 500;
+    padding: 2px 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    min-width: 24px;
+    text-align: center;
+}
+
+/* 반응형 디자인 */
+@media screen and (max-width: 768px) {
+    .left {
+        display: none;
+    }
+}
