@@ -47,21 +47,21 @@ const Monthly = () => {
     };
 
     return (
-        <div>
-            <div className="month-title">{currentMonth}</div>
-            <div className="days-grid">
-                {calendarDays.map((day, index) => (
-                    <button
-                        key={index}
-                        className={`day-button ${!day.date ? 'empty' : ''}`}
-                        style={{ color: getDayColor(day.dayOfWeek) }}
-                        disabled={!day.date}
-                    >
-                        {day.date}
-                    </button>
-                ))}
-            </div>
+        <>
+        <div className="month-title">{currentMonth}</div>
+        <div className="days-grid">
+            {calendarDays.map((day, index) => (
+                <button
+                    key={index}
+                    className={`day-button ${!day.date ? 'empty' : ''}`}
+                    style={{ color: getDayColor(day.dayOfWeek) }}
+                    disabled={!day.date}
+                >
+                    {day.date}
+                </button>
+            ))}
         </div>
+        </>
     );
 };
 

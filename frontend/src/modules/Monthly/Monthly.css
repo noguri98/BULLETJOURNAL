@@ -29,7 +29,7 @@
 }
 
 .day-button:not(:disabled):hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.4);
 }
 
 .day-button.empty {
@@ -38,13 +38,11 @@
 
 /* 현재 날짜 스타일 */
 .day-button.today {
-    background: rgba(255, 255, 255, 0.1);
     font-weight: 500;
 }
 
 /* 선택된 날짜 스타일 */
 .day-button.selected {
-    background: rgba(255, 255, 255, 0.15);
     color: white;
 }
 
