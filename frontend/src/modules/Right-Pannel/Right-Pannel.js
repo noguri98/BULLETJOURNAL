@@ -2,8 +2,8 @@ import React, { useState, useCallback } from 'react';
 import './Right-Pannel.css';
 import { detectDragDown } from '../../logic/Gesture/Gesture';
 
-const RightPannel = () => {
-    const [, setGestureState] = useState({
+const RightPannel = ({ onCreateClick }) => {
+    const [gestureState, setGestureState] = useState({
         isDragging: false,
         progress: 0
     });
@@ -26,7 +26,10 @@ const RightPannel = () => {
                     <h1>모든 노트</h1>
                 </div>
                 <div className='header-actions'>
-                    <button className='action-button'>
+                    <button 
+                        className='action-button'
+                        onClick={onCreateClick}
+                    >
                         <span>✨</span>
                         새로운 노트
                     </button>
