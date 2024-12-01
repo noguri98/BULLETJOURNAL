@@ -1,10 +1,9 @@
 import React, { useState, useCallback } from 'react';
 import './Right-Pannel.css';
 import { detectDragDown } from '../../logic/Gesture/Gesture';
-import Search from '../../components/Search/Search';
 
 const RightPannel = () => {
-    const [gestureState, setGestureState] = useState({
+    const [, setGestureState] = useState({
         isDragging: false,
         progress: 0
     });
